@@ -22,4 +22,3 @@ Script is build for testing scenario. There are five steps:
 4. Check if data is added
 5. Deleting new workshift and making sure if data is deleted
 
-Contact:
