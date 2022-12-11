@@ -1,0 +1,19 @@
+{
+  "name": "selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^4.5.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^108.0.0",
+    "selenium-webdriver": "^4.7.0"
+  }
+}
