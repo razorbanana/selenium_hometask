@@ -64,7 +64,7 @@ async function test_case(){
 
         flags.goingToWorkshift = 1
 
-        await driver.wait(until.elementLocated(By.xpath(page.main.admin.addWorkshift.nameInput)), 10000).sendKeys('RandomName');
+        await driver.wait(until.elementLocated(By.xpath(page.main.admin.addWorkshift.nameInput)), 10000).sendKeys('StanislavStefyuk');
 
         await driver.wait(until.elementLocated(By.xpath(page.main.admin.addWorkshift.fromTimeInput)), 10000).clear();
         await driver.wait(until.elementLocated(By.xpath(page.main.admin.addWorkshift.fromTimeInput)), 10000).sendKeys('06:00 AM');
@@ -85,7 +85,7 @@ async function test_case(){
         let list = await driver.wait(until.elementsLocated(By.css(page.main.admin.workshift.tableContent), 10000))
         for(let i = 0; i < list.length; i++){
             let text1 = await list[i].getText()
-            if(text1 === 'RandomName'){
+            if(text1 === 'StanislavStefyuk'){
                 let text2 = await list[i+1].getText()
                 if(text2 === '06:00'){
                     let text3 = await list[i+2].getText()
